@@ -24,6 +24,10 @@ jobs:
           echo "Repository: $GITHUB_REPOSITORY"
           echo "Operating System: $(uname -a)"
           echo "Current Directory: $(pwd)"
+          
+      - name: Display custom message
+        run: echo "$CUSTOM_MESSAGE"
+
 
       # Step 4: Check software versions
       - name: Check versions
